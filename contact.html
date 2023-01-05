@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Website</title>
+	<link rel="stylesheet" href="1style.css">
+	<script src="https://kit.fontawesome.com/6c812e2ea7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+
+<nav>
+<img src="images/logo.png" class="logo">
+	<ul>
+		<li><a href="file:///E:/Fetalvero/personal%20website%20index.html">Home</a></li>
+		<li><a href="file:///E:/Fetalvero/gallery.html">Gallery</a></li>
+		<li><a href="file:///E:/Fetalvero/about%20me.html">About me</a></li>
+		<li><a href="file:///E:/Fetalvero/contact.html">Contact me</a></li>
+
+	</ul>
+	<nav>
+	
+<!-------------Contact----------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p>fninomiguel@gmail.com</p>
+				<p>09957166562</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/ninomiguel.fetalvero/"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com/hey_meegle/"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.google.com/maps/place/8771+Ejercito+Ave,+Pasig,+1920+Metro+Manila/@14.5436237,121.104392,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c64922a9391b:0xf639aa59d62cafc!8m2!3d14.5436237!4d121.1065807"><i class="fa-sharp fa-solid fa-map"></i></a>
+			</div>
+			<div class="contact-right">
+				<form>
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+
+</body>
+</html>

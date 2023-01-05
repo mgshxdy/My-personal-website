@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Website</title>
+	<link rel="stylesheet" href="1style.css">
+	<script src="https://kit.fontawesome.com/6c812e2ea7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+
+<nav>
+<img src="images/logo.png" class="logo">
+	<ul>
+		<li><a href="file:///E:/Fetalvero/personal%20website%20index.html">Home</a></li>
+		<li><a href="file:///E:/Fetalvero/gallery.html">Gallery</a></li>
+		<li><a href="file:///E:/Fetalvero/about%20me.html">About me</a></li>
+		<li><a href="file:///E:/Fetalvero/contact.html">Contact me</a></li>
+
+	</ul>
+	<nav>
+	<div class="header-text">
+		<p>UI/UX Designer</p>
+		<h1>Hi, I'm <span>Miguel</span><br>1st year student from Adamson</h1>
+	</div>
+</div>
+</div>
+<!--Home Page-->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+			<img src="images/hey.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title2">Student</h1>
+				<p>I'm a first year student from Adamson University, I'm taking Bachelor of Science in Information Technology.
+				To be a web developer is my dream, and in order for me to achieve my dreams and goals i have to focus on my studies
+				and present self.</p>
+				<br>
+				<br>
+				<h2 class="sub-title2">Hobbies</h2>
+				
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('love language')">Gym</p>
+					<p class="tab-links" onclick="opentab('education')">Music</p>
+					<p class="tab-links" onclick="opentab('talents and skills')">Movie</p>
+				</div>
+				<div class="tab-contents active-tab" id="love language">
+					<ul>
+					<p>Working out is one of my favorite things to do in my free time</p>
+						<img src="images/animated.gif" style="width:300px;height:400px;">
+
+						
+					</ul>
+			</div>
+			
+			<div class="tab-contents" id="education">
+					<ul>
+						<p>Here is one of my favorite music</p>
+						<audio controls>
+						<source src= "E:\Fetalvero\audio\song.mp3" type = "audio/mp3">
+						</audio>
+					</ul>
+			</div>
+			
+			<div class="tab-contents" id="talents and skills">
+			<ul>
+			<p>This is my favorite TV Show</p>
+					<iframe width="420" height="345" src="https://www.youtube.com/embed/HhesaQXLuRY">
+						</iframe>
+						
+					</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+				</div>
+			</div>
+
+	</div>
+		
+
+	
+</div>
+
+
+
+
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+
+</body>
+</html>

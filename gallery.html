@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Website</title>
+	<link rel="stylesheet" href="1style.css">
+	<script src="https://kit.fontawesome.com/6c812e2ea7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+
+<nav>
+<img src="images/logo.png" class="logo">
+	<ul>
+		<li><a href="file:///E:/Fetalvero/personal%20website%20index.html">Home</a></li>
+		<li><a href="file:///E:/Fetalvero/gallery.html">Gallery</a></li>
+		<li><a href="file:///E:/Fetalvero/about%20me.html">About me</a></li>
+		<li><a href="file:///E:/Fetalvero/contact.html">Contact me</a></li>
+
+	</ul>
+	<nav>
+	
+<!-----------Gallery-------->
+<div id="Gallery">
+	
+
+
+
+<div class="row">
+  <div class="column">
+  <h3>Stay Calm</h3>
+			<p>This is me when i was 3 years old</p>
+    <img src="images/3yrsold.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+  <h3>Chill</h3>
+			<p>Just me relaxing at the beach</p>
+    <img src="images/dante.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+  <h3>Feeling Loved</h3>
+			<p>Loving myself more everyday</p>
+    <img src="images/ako.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+
+
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+
+</body>
+</html>

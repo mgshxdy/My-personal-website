@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Website</title>
+	<link rel="stylesheet" href="1style.css">
+	<script src="https://kit.fontawesome.com/6c812e2ea7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+
+<nav>
+<img src="images/logo.png" class="logo">
+	<ul>
+		<li><a href="file:///E:/Fetalvero/personal%20website%20index.html">Home</a></li>
+		<li><a href="file:///E:/Fetalvero/gallery.html">Gallery</a></li>
+		<li><a href="file:///E:/Fetalvero/about%20me.html">About me</a></li>
+		<li><a href="file:///E:/Fetalvero/contact.html">Contact me</a></li>
+
+	</ul>
+	<nav>
+	
+<!--About Me-->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+			<img src="images/eating.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>Ako nga pala ay isang sad boy manipulative, mahilig mang gaslight at mang guilt trip. 
+				Kung ako tatanungin mas gugustuhin ko pang mang husga kaysa mag almusal sa umaga.
+				Di ako tumitigil sa pagkamit ng aking pangarap, sapagkat may kayabangan akong mini-maintain sa social media.</p>
+				
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('love language')">Love Language</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+					<p class="tab-links" onclick="opentab('talents and skills')">Talents and Skills</p>
+				</div>
+				<div class="tab-contents active-tab" id="love language">
+					<ul>
+						<li><span>Fixer</span><br>Pang character Development</li>
+						<li><span>Gift Giving</span><br>Namimigay ng regalo kahit 3 days pa lang kausap</li>
+						<li><span>Physical Abuse</span><br>Bubugbugin kita ng aking pagmamahal</li>
+					</ul>
+			</div>
+			<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2022 - Current</span><br>College Student</li>
+						<li><span>2018 - 2020</span><br>Senior High School</li>
+						<li><span>2014 - 2018</span><br>Junior High School</li>
+						<li><span>2007 - 2013</span><br>Elementary Student</li>
+					</ul>
+			</div>
+			<div class="tab-contents" id="talents and skills">
+					<ul>
+						<li><span>Can cook</span><br>Nakapag luto ng manok na hindi natatakot sa nag tatalsikang mantika</li>
+						<li><span>Can sing</span><br>Kaya kang kantahan kahit wala sa tono</li>
+						<li><span>Can dance</span><br>Kaya kang sayawan, kakanood ng vid ni daddy tyga</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+
+</body>
+</html>
